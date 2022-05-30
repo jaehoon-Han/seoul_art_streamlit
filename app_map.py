@@ -7,5 +7,4 @@ from streamlit_folium import st_folium
 
 
 def run_map() :
-    pd.read_csv('data/seoul_art.csv')
-    
+    pd.read_csv('data/seoul_art100.csv')
