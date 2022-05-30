@@ -19,7 +19,7 @@ def main():
             x.append(df['X좌표'][i])
             y.append(df['Y좌표'][i])
 
-    map_osm = folium.Map(location = [x[14],y[14]],zoom_start=14)
+    map_osm = folium.Map(location = [x[7],y[7]],zoom_start=14)
 
     for i in range(len(x)) :
         folium.Marker([x[i],y[i]], popup=df.iloc[i,8], icon=folium.Icon(color='red',icon='info-sign')).add_to(map_osm)
