@@ -24,7 +24,7 @@ def main():
     for i in range(len(x)) :
         folium.Marker([x[i],y[i]], popup=df.iloc[i,8], icon=folium.Icon(color='red',icon='info-sign')).add_to(map_osm)
 
-    folium.CircleMarker(location=[x[1],y[13]],popup='주소',radius = 300,color="#3186cc", fill_color="#3186cc").add_to(map_osm)
+    folium.CircleMarker(location=[x[13],y[13]],popup='주소',radius = 300,color="#3186cc", fill_color="#3186cc").add_to(map_osm)
     map_osm.save('seoul_art.html')
     
     st_data = st_folium(map_osm, width = 725)
